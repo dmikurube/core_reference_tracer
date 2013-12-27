@@ -16,6 +16,12 @@ struct struct_b_t {
   struct_a_t* p;
 };
 
+void forgotten_function(int n, int* a) {
+  for (int i = 0; i < n; ++i) {
+    a[i] = i * 2;
+  }
+}
+
 int main() {
   struct_a_t a1, a2, a3;
   struct_b_t b;
